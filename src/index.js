@@ -1,5 +1,6 @@
 // BOOTSTRAP
-import "./scss/main.scss"
+// import "./scss/main.scss"
+import "./css/bs-compiled.css"
 // STYLES
 import "./scss/style.scss"
 // BOX Icons
