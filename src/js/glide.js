@@ -4,7 +4,6 @@ import "@glidejs/glide/dist/css/glide.theme.min.css";
 
 import Glide from "@glidejs/glide";
 
-
 new Glide(".glide-deals", {
   type: "carousel",
   perView: 3,
@@ -16,10 +15,8 @@ new Glide(".glide-deals", {
     992: {
       perView: 1,
     },
-
   },
 }).mount();
-
 
 new Glide(".glide-services", {
   type: "carousel",
@@ -37,7 +34,6 @@ new Glide(".glide-services", {
     },
   },
 }).mount();
-
 
 new Glide(".glide-reviews", {
   type: "carousel",

@@ -40,7 +40,7 @@
     "ratingCount": "194"
   }
   </script>
-  <link rel="stylesheet" href="./src/css/preloader.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="./src/css/preloader.min.css" type="text/css">
   <link rel="preload" href="./media/header-bg-mobile.webp" as="image" type="image/webp" media="(max-width: 1024px)">
   <link rel="preload" href="./media/header-bg.webp" as="image" type="image/webp" media="(min-width: 1025px)">
 </head>
@@ -68,7 +68,7 @@
     </div>
   </div>
 
-  <a class="skip-link screen-reader-text " hidden href="#hero" title="Skip to content">Skip to content</a>
+  <a class="skip-link screen-reader-text " hidden href="#home" title="Skip to content">Skip to content</a>
 
   <header id="header" class="site-header">
     <div class="container">
@@ -83,11 +83,21 @@
         <nav class="nav-primary" aria-label="Primary" itemscope itemtype="https://schema.org/SiteNavigationElement">
           <ul id="primary-menu" class="primary-menu list-unstyled">
             <li class="menu-item active"><a class="nav-link" href="#home"><i class='bx bxs-home'></i> Home</a></li>
-            <li class="menu-item"><a class="nav-link" href="#deals"><i class='bx bxs-gift'></i> Deals</a></li>
-            <li class="menu-item"><a class="nav-link" href="#about"><i class='bx bxs-info-circle'></i> About Us</a></li>
-            <li class="menu-item"><a class="nav-link" href="#whyus"><i class='bx bxs-wrench'></i> Why Us</a></li>
-            <li class="menu-item"><a class="nav-link" href="#testimonial"><i class='bx bxs-user-circle'></i> Testimonials</a></li>
-            <li class="menu-item"><a class="nav-link" href="#contactus"><i class='bx bxs-contact'></i> Contact Us!</a></li>
+            <li class="menu-item">
+              <a class="nav-link" href="#deals"><i class='bx bxs-gift'></i> Deals</a>
+            </li>
+            <li class="menu-item">
+              <a class="nav-link" href="#about"><i class='bx bxs-info-circle'></i> About Us</a>
+            </li>
+            <li class="menu-item">
+              <a class="nav-link" href="#whyus"><i class='bx bxs-wrench'></i> Why Us</a>
+            </li>
+            <li class="menu-item">
+              <a class="nav-link" href="#testimonial"><i class='bx bxs-user-circle'></i> Testimonials</a>
+            </li>
+            <li class="menu-item">
+              <a class="nav-link" href="#contactus"><i class='bx bxs-contact'></i> Contact Us!</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -101,9 +111,7 @@
         <div class="background-overlay"></div>
         <div class="container">
           <div class="row g-0">
-            
             <div class="col-lg-6 d-none d-lg-block"></div>
-
             <div class="col-lg-6 text-center text-lg-start">
               <div class="heading-container text-primary">
                 <h1 class="fw-bold text-light">
@@ -124,7 +132,7 @@
           </div>
         </div>
       </section>
-      
+
       <section id="deals" class="deals section">
         <div class="container">
 
@@ -134,120 +142,14 @@
             </h2>
           </div>
 
-          <div class="row g-2">
-            <div class="col-lg-4">
-              <div class="p-3 fw-medium rounded bg-secondary border border-primary h-100">We are Open 7 days a week.</div>
-            </div> 
-            <div class="col-lg-4">
-              <div class="p-3 fw-medium rounded bg-secondary border border-primary h-100">Both Appointments and Walkins are Welcome.</div>
-            </div> 
-            <div class="col-lg-4">
-              <div class="p-3 fw-medium rounded bg-secondary border border-primary h-100">Special Discounts for Veterans & Military Personel, Students, and Senior Citizens.</div>
-            </div> 
-          </div>
+          <!-- Alert Boxes Setup JS -->
+          <div id="alert-boxes" class="row g-2"></div>
 
           <div class="deals-container my-4 position-relative">
             <div class="glide-deals">
               <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides list-unstyled">
-                  <li class="glide__slide h-auto">
-                    <div class="ag-courses_item h-100 bg-primary p-3 text-light rounded">
-                      <div class="ag-courses-item_bg"></div>
-                      <div class="ag-courses-item_title fs-5 fw-medium mb-2">
-                        <i class="icon bx bxs-car-wash display-6"></i><br> Oil Change for $18.99 & Up
-                      </div>
-                      <div class="ag-course-body">
-                        Oil Change for Only $18.99 & Up! Limited time offer. Expert technicians. Unbeatable price. Visit us Today for a quick Oil Change!
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="ag-courses_item h-100 bg-primary p-3 text-light rounded">
-                      <div class="ag-courses-item_bg"></div>
-                      <div class="ag-courses-item_title fs-5 fw-medium mb-2">
-                        <i class="icon bx bx-stop-circle display-6"></i><br> Brake Pads for $79.99 & Up</div>
-                      <div class="ag-course-body">
-                        Enhance your vehicle's safety with our limited-time brake pads deal! Expert replacements, special pricing. Act now, drive confidently!
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="ag-courses_item h-100 bg-primary p-3 text-light rounded">
-                      <div class="ag-courses-item_bg"></div>
-                      <div class="ag-courses-item_title fs-5 fw-medium mb-2">
-                        <i class="icon bx bx-color display-6"></i><br> Wheel Alignment for $49.99 & Up</div>
-                      <div class="ag-course-body">
-                        Wheel alignment for $49.99 & up! Limited time offer. Improved handling and fuel efficiency. Visit us today! 
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="ag-courses_item h-100 bg-primary p-3 text-light rounded">
-                      <div class="ag-courses-item_bg"></div>
-                      <div class="ag-courses-item_title fs-5 fw-medium mb-2">
-                        <i class="icon bx bxs-wrench display-6"></i><br> Tune Up for $299.99 & Up
-                      </div>
-                      <div class="ag-course-body">
-                        Tune up for $299.99 & up! Limited time offer. Optimize performance and reliability. Visit us today! 
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="ag-courses_item h-100 bg-primary p-3 text-light rounded">
-                      <div class="ag-courses-item_bg"></div>
-                      <div class="ag-courses-item_title fs-5 fw-medium mb-2">
-                        <i class="icon bx bxs-color display-6"></i><br> 4 New Tires for $399.99 & Up
-                      </div>
-                      <div class="ag-course-body">
-                        Get rolling with a fantastic deal! 4 new tires for $399.99 & free wheel alignment. Limited time offer. Visit us now!
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="ag-courses_item h-100 bg-primary p-3 text-light rounded">
-                      <div class="ag-courses-item_bg"></div>
-                      <div class="ag-courses-item_title fs-5 fw-medium mb-2">
-                        <i class="icon bx bxs-color display-6"></i><br> 4 Used Tires for $199.99 & Up
-                      </div>
-                      <div class="ag-course-body">
-                        Get road-ready with our special deal! 4 used tires for $199.99 & free wheel alignment. Limited time offer. Visit us now!
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="ag-courses_item h-100 bg-primary p-3 text-light rounded">
-                      <div class="ag-courses-item_bg"></div>
-                      <div class="ag-courses-item_title fs-5 fw-medium mb-2">
-                        <i class="icon bx bxs-car-mechanic display-6"></i><br> Free Diagnostics with Repairing
-                      </div>
-                      <div class="ag-course-body">
-                        Diagnostic service now FREE with any repair! Limited time offer. Let us find and fix the issue. Visit us today!
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="ag-courses_item h-100 bg-primary p-3 text-light rounded">
-                      <div class="ag-courses-item_bg"></div>
-                      <div class="ag-courses-item_title fs-5 fw-medium mb-2">
-                        <i class="icon bx bx-wind display-6"></i><br> Free AC Checks with Repairing
-                      </div>
-                      <div class="ag-course-body">
-                        Stay cool this summer! Free AC checks with any repair. Limited time offer. Beat the heat, visit us now!
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="ag-courses_item h-100 bg-primary p-3 text-light rounded">
-                      <div class="ag-courses-item_bg"></div>
-                      <div class="ag-courses-item_title fs-5 fw-medium mb-2">
-                        <i class="icon bx bxs-car-garage display-6"></i><br> Free Vehicle Inspection with any service.
-                      </div>
-                      <div class="ag-course-body">
-                        Comprehensive vehicle inspection FREE with any service! Limited time offer. Visit us today!
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+                <!-- Deaals Slide Setup JS -->
+                <ul id="deals-slides" class="glide__slides list-unstyled"></ul>
                 <div class="glide__arrows text-center mt-3 d-flex justify-content-around" data-glide-el="controls">
                   <button aria-label="previous-slide" class="glide__arrow glide__arrow--left lh-1 m-0 p-0 fs-2 h-100 bg-opacity-25 border-0 shadow-none text-light" data-glide-dir="<">
                     <i class="bx bxs-chevron-left-circle"></i>
@@ -283,231 +185,8 @@
           <div class="services-container position-relative my-4">
             <div class="glide-services">
               <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides list-unstyled">
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> Tire Work
-                        </div>
-                        <p class="mb-0">
-                          Whether you need tire repairs or replacements, our
-                          skilled technicians are here to keep your wheels rolling
-                          safely and smoothly.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> New & Used Tire
-                        </div>
-                        <p class="mb-0">
-                          We offer a selection of high-quality new and used tires
-                          that provide excellent performance and value for your
-                          vehicle.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> Tire Disposal
-                        </div>
-                        <p class="mb-0">
-                          As part of our commitment to eco-friendly practices, we
-                          can dispose of your unsuable tires responsibly for a
-                          nominal fee.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> Patch & Plug
-                        </div>
-                        <p class="mb-0">
-                          Our professional tire patching service restores damaged
-                          tires to safe conditions, saving you from the cost of
-                          replacement.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> TPMS & Install
-                        </div>
-                        <p class="mb-0">
-                          Our technicians can install and service Tire Pressure
-                          Monitoring System (TPMS) sensors to keep you informed
-                          about your tire pressure.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> Wheel Alignment
-                        </div>
-                        <p class="mb-0">
-                          Improve handling and tire longevity with precision wheel
-                          alignment, ensuring all wheels are correctly oriented.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> A/C Recharge & Dye
-                        </div>
-                        <p class="mb-0">
-                          Stay cool during hot days with our A/C recharge service
-                          using the best refrigerant and dye for leak detection.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> Oil Change & Filter
-                        </div>
-                        <p class="mb-0">
-                          Keep your engine running smoothly and efficiently with
-                          our oil change service, including a new filter
-                          installation.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> Front & Rear Brake
-                          Pads
-                        </div>
-                        <p class="mb-0">
-                          Ensure reliable stopping power with our front and rear
-                          brake pad replacement, using top-quality brake pads for
-                          safety and performance.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> New Battery
-                        </div>
-                        <p class="mb-0">
-                          If it's time for a new battery, trust our experts to
-                          install a reliable and durable replacement for your
-                          vehicle.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> Wiper Blades
-                        </div>
-                        <p class="mb-0">
-                          Improve visibility during rain or snow with new wiper
-                          blades that fit your vehicle perfectly.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> Cabin Air Filters
-                        </div>
-                        <p class="mb-0">
-                          Breathe clean air inside your car with our cabin air
-                          filter replacement service.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> Suspension &
-                          Steering
-                        </div>
-                        <p class="mb-0">
-                          Experience smoother rides and enhanced handling with our
-                          expert suspension and steering services with us. Drive
-                          with confidence.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> Exhaust System
-                          repairing
-                        </div>
-                        <p class="mb-0">
-                          Experience smoother rides and enhanced handling with
-                          expert suspension and steering services. visit us today!
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> Car electrical
-                          system repairs
-                        </div>
-                        <p class="mb-0">
-                          For reliable car electrical system repairs, trust our
-                          experienced technicians. Drive worry-free with our
-                          top-notch service.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <div class="card-title text-primary fw-medium fs-5">
-                          <i class="bx bxs-car-mechanic"></i> Check engine light
-                          diagnosis
-                        </div>
-                        <p class="mb-0">
-                          Is your check engine light on? Don't worry! Our skilled
-                          technicians specialize in check engine light diagnosis.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+                <!-- Services Slide Setup JS -->
+                <ul id="service-slides" class="glide__slides list-unstyled"></ul>
                 <div class="glide__arrows text-center mt-3 d-flex justify-content-around" data-glide-el="controls">
                   <button aria-label="previous-slide" class="glide__arrow glide__arrow--left lh-1 m-0 p-0 fs-2 h-100 bg-opacity-25 border-0 shadow-none text-dark" data-glide-dir="<">
                     <i class="bx bxs-chevron-left-circle"></i>
@@ -530,51 +209,9 @@
             <h2 class="section-heading"><i class='bx bxs-wrench'></i> Why Choose Us</h2>
           </div>
 
-          <div class="counter-box mt-3 text-primary fw-bold text-center row row-gap-3">
+          <!-- Stats Counter Setup JS -->
+          <div id="counter-boxes" class="counter-box mt-3 text-primary fw-bold text-center row row-gap-3"></div>
 
-            <div class="counter-widget business-counter col-6 col-lg-3">
-              <div class="counter-inner shadow-sm rounded-4 p-4 bg-secondary h-100">
-                <div class="counter-container">
-                  <div class="counter-head fs-3">
-                    <span class="counter-number">5</span>+
-                  </div>
-                </div>
-                <div>Years in Business</div>
-              </div>
-            </div>
-            <div class="counter-widget tires-counter col-6 col-lg-3">
-              <div class="counter-inner shadow-sm rounded-4 p-4 bg-secondary h-100">
-                <div class="counter-container">
-                  <div class="counter-head fs-3">
-                    <span class="counter-number">640</span>+
-                  </div>
-                </div>
-                <div>Tires Changed</div>
-              </div>
-            </div>
-            <div class="counter-widget wheels-counter col-6 col-lg-3">
-              <div class="counter-inner shadow-sm rounded-4 p-4 bg-secondary h-100">
-                <div class="counter-container">
-                  <div class="counter-head fs-3">
-                    <span class="counter-number">2200</span>+
-                  </div>
-                </div>
-                <div>Wheels Aligned</div>
-              </div>
-            </div>
-            <div class="counter-widget oil-counter col-6 col-lg-3">
-              <div class="counter-inner shadow-sm rounded-4 p-4 bg-secondary h-100">
-                <div class="counter-container">
-                  <div class="counter-head fs-3">
-                    <span class="counter-number">5000</span>+
-                  </div>
-                </div>
-                <div>Oils Changed</div>
-              </div>
-            </div>
-                        
-          </div>
-          
           <p class="section-copy my-4 text-center text-md-start">
             We offer top-notch auto repair services in Orange City, Florida. 
             For all vehicle repairs, modifications, and maintenance, our team of highly skilled professionals is 
@@ -584,73 +221,11 @@
             maintenance of your vehicle.
           </p>
 
-          <div class="row g-2">
+          <div id="reason-boxes" class="row g-2"></div>
 
-            <div class="col-lg-4 col-6 col-12">
-              <div class="card shadow-sm h-100">
-                <div class="card-body">
-                  <div class="fs-5 text-primary fw-medium card-title">Unmatched Expertise</div>
-                  At Car Club Tire & Auto Repair Service, our team of highly skilled and certified technicians 
-                  brings years of experience and expertise to the table. You can trust us to handle your vehicle 
-                  with precision and care, ensuring top-notch repairs and maintenance.
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-6 col-12">
-              <div class="card shadow-sm h-100">
-                <div class="card-body">
-                  <div class="fs-5 text-primary fw-medium card-title">Customer-Centric Approach</div>
-                  We prioritize your satisfaction and go the extra mile to provide personalized attention 
-                  to every customer. Our friendly and approachable team is always ready to listen to your 
-                  concerns and offer tailored solutions that suit your specific needs.
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-6 col-12">
-              <div class="card shadow-sm h-100">
-                <div class="card-body">
-                  <div class="fs-5 mb-2 text-primary card-title">Wide Range of Services</div>
-                  From tire work and maintenance to comprehensive auto repairs, we offer a diverse range of 
-                  services under one roof. Whether it's routine maintenance or complex repairs, we've got you 
-                  covered, saving you time and hassle.
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-6 col-12">
-              <div class="card shadow-sm h-100">
-                <div class="card-body">
-                  <div class="fs-5 text-primary fw-medium card-title">Quality and Reliability</div>
-                  We are committed to using top-quality parts and materials in all our services. 
-                  Our emphasis on reliability ensures that your vehicle receives the best possible care, 
-                  enhancing its performance and longevity.
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-6 col-12">
-              <div class="card shadow-sm h-100">
-                <div class="card-body">
-                  <div class="fs-5 text-primary fw-medium card-title">Transparent Pricing</div>
-                  At Car Club, we believe in transparent and fair pricing. You can count on us to 
-                  provide honest estimates and no hidden fees, allowing you to make informed decisions 
-                  without any surprises.
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-6 col-12">
-              <div class="card shadow-sm h-100">
-                <div class="card-body">
-                  <div class="fs-5 text-primary fw-medium card-title">Swift Turnaround</div>
-                  We understand that your time is valuable, which is why we strive to deliver 
-                  efficient and timely service. Our team works diligently to get you back on the 
-                  road as quickly as possible, without compromising on quality.
-                </div>
-              </div>
-            </div>
-
-          </div>
         </div>
       </section>
-      
+
       <section id="testimonial" class="testimonials section">
         <div class="container">
 
@@ -663,105 +238,8 @@
           <div class="testimonial reviews-container position-relative">
             <div class="glide-reviews">
               <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides list-unstyled">
-                  <li class="glide__slide h-auto">
-                    <figure class="h-100">
-                      <figcaption class="text-center text-md-start mb-2 fw-medium">
-                        <a href="https://goo.gl/maps/hDdZ7p2JEXzQrLyB9" title="5 star Google Review" target="_blank" rel="nofollow">
-                          <img decoding="async" loading="lazy" width="24" height="24" src="./media/reviewers/Mercy_Ares.webp" alt="Google Reviewer's Photo">
-                          Mercy Ares &#8212;
-                          <i class="bx bxl-google"></i> <i class='bx bx-map-alt'></i>
-                        </a>
-                      </figcaption>
-                      <div class="star-ratings mb-2 text-center text-md-start">
-                        <i class="bxs-star bx"></i>
-                        <i class="bxs-star bx"></i>
-                        <i class="bxs-star bx"></i>
-                        <i class="bxs-star bx"></i>
-                        <i class="bxs-star bx"></i>
-                      </div>
-                      <blockquote class="blockquote">
-                        <p>
-                          "Found this place on Groupon, they take appts &
-                          walk-ins. Arrived and was serviced immediately, the
-                          staff employees are professional and courteous. Amazing
-                          customer service experience. Super clean facility with
-                          an indoor AC comfortable waiting area, very clean
-                          bathrooms and free coffee! Was well worth the over an
-                          hour drive to get here but I'll definitely be returning
-                          even without Groupon to fix other issues on both my
-                          minivan & suv!"
-                        </p>
-                      </blockquote>
-                    </figure>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <figure class="h-100">
-                      <figcaption class="text-center text-md-start mb-2 fw-medium">
-                        <a href="https://goo.gl/maps/qARRRYUnj4GqAedLA" title="5 star Google Review" target="_blank" rel="nofollow">
-                          <img decoding="async" loading="lazy" width="24" height="24" src="./media/reviewers/Maybelline_Sierra.webp" alt="Google Reviewer's Photo">
-                          Maybelline Sierra &#8212;
-                          <i class="bx bxl-google"></i> <i class='bx bx-map-alt'></i>
-                        </a>
-                      </figcaption>
-                      <div class="star-ratings mb-2 text-center text-md-start">
-                        <i class="bxs-star bx"></i>
-                        <i class="bxs-star bx"></i>
-                        <i class="bxs-star bx"></i>
-                        <i class="bxs-star bx"></i>
-                        <i class="bxs-star bx"></i>
-                      </div>
-                      <blockquote class="blockquote">
-                        <p>
-                          "I needed 4 new tires, a wheel alignment and rear brake
-                          pads and rotors for my 2018 Honda Accord. I called at
-                          least 6 places for quotes and Car Club gave me the best
-                          deal by far. I called them back several times with new
-                          questions while I was still shopping around for price
-                          quotes and each time, they were super patien+t and kind
-                          with me. When I finally decided to go with them, they
-                          got me in for service the very next day and did a great
-                          job! Now we will be bringing them our second car as well
-                          for some needed routine maintenance. I highly recommend
-                          them!"
-                        </p>
-                      </blockquote>
-                    </figure>
-                  </li>
-                  <li class="glide__slide h-auto">
-                    <figure class="h-100">
-                      <figcaption class="text-center text-md-start mb-2 fw-medium">
-                        <a href="https://goo.gl/maps/SJc9B8wmXW4ezHcF6" title="5 star Google Review" target="_blank" rel="nofollow">
-                          <img decoding="async" loading="lazy" width="24" height="24" src="./media/reviewers/Lex_Scooter.webp" alt="Google Reviewer's Photo">
-                          Lex Scooter &#8212;
-                          <i class="bx bxl-google"></i> <i class='bx bx-map-alt'></i>
-                        </a>
-                      </figcaption>
-                      <div class="star-ratings mb-2 text-center text-md-start">
-                        <i class="bxs-star bx"></i>
-                        <i class="bxs-star bx"></i>
-                        <i class="bxs-star bx"></i>
-                        <i class="bxs-star bx"></i>
-                        <i class="bxs-star bx"></i>
-                      </div>
-                      <blockquote class="blockquote">
-                        <p>
-                          "I will always be back to this location for service on
-                          my vehicles . i read a review for them that read "this
-                          location restored their faith in humanity" & I couldn't
-                          agree more. Thank you for doing ,all y'all can do ,for
-                          your customers. Fair prices & they gave me a fair quote
-                          over the phone , WITH EASE, after calling around for
-                          days to find the best deal on brakes .. I went the next
-                          day , around a general time i thought i could make it &
-                          it was one of the best experiences I've had at an auto
-                          repair shop .. Can't thank them enough .. super trust
-                          worthy .. Will be back !!!"
-                        </p>
-                      </blockquote>
-                    </figure>
-                  </li>
-                </ul>
+                <!-- Review Slides Setup JS -->
+                <ul id="review-slides" class="glide__slides list-unstyled"></ul>
                 <div class="glide__arrows text-center mt-3 d-flex justify-content-around" data-glide-el="controls">
                   <button aria-label="previous-slide" class="glide__arrow glide__arrow--left lh-1 m-0 p-0 fs-2 h-100 bg-opacity-25 border-0 shadow-none text-dark" data-glide-dir="<">
                     <i class="bx bxs-chevron-left-circle"></i>
@@ -879,7 +357,7 @@
           <div class="map-widget-container my-4">
             <iframe loading="lazy" width="500" height="500" src="https://maps.google.com/maps?q=Car%20Club%20Tire%20%26%20Auto%20repair%20service%20orange%20city&#038;t=m&#038;z=15&#038;output=embed&#038;iwloc=near" title="Car Club Tire &amp; Auto repair service orange city" aria-label="Car Club Tire &amp; Auto repair service orange city"></iframe>
           </div>
-          
+
         </div>
       </section>
 
@@ -888,7 +366,7 @@
 
   <footer class="site-footer" itemtype="https://schema.org/WPFooter" itemscope="itemscope">
     <div class="container">
-      
+
       <div class="row py-4 align-items-center g-4">
 
         <div class="logo col-lg-4 text-center text-lg-start">
