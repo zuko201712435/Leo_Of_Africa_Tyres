@@ -22,16 +22,18 @@ const counterBoxesData = [
   },
 ];
 const counterBoxesHtml = counterBoxesData.map((cb) => {
-  return `<div id="${cb.id}" class="counter-widget ${cb.id} col-6 col-lg-3">
-    <div class="counter-inner shadow-sm rounded-4 p-4 bg-secondary h-100">
-      <div class="counter-container">
-        <div class="counter-head fs-3">
-          <span class="counter-number">${cb.number}</span>+
+  const output =
+    `<div id="${cb.id}" class="counter-widget ${cb.id} col-6 col-lg-3">
+      <div class="counter-inner shadow-sm rounded-4 p-4 bg-secondary h-100">
+        <div class="counter-container">
+          <div class="counter-head fs-3">
+            <span class="counter-number">${cb.number}</span>+
+          </div>
         </div>
+        <div>${cb.text}</div>
       </div>
-      <div>${cb.text}</div>
-    </div>
-  </div>`;
+    </div>`;
+  return output;
 });
 const counterBoxesElement = document.getElementById("counter-boxes");
 if (counterBoxesElement) counterBoxesElement.innerHTML = counterBoxesHtml.join("");
@@ -65,7 +67,8 @@ const reasonBoxesData = [
   },
 ];
 const reasonBoxesHtml = reasonBoxesData.map((rs) => {
-  return `<div class="col-lg-4 col-6 col-12">
+  const output =
+    `<div class="col-lg-4 col-6 col-12">
       <div class="card shadow-sm h-100">
         <div class="card-body">
           <div class="fs-5 text-primary fw-medium card-title">${rs.title}</div>
@@ -73,6 +76,7 @@ const reasonBoxesHtml = reasonBoxesData.map((rs) => {
         </div>
       </div>
     </div>`;
+  return output;
 });
 const reasaonBoxesElement = document.getElementById("reason-boxes");
 if (reasaonBoxesElement) reasaonBoxesElement.innerHTML = reasonBoxesHtml.join("");

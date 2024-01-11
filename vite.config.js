@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import webfontDownload from "vite-plugin-webfont-dl";
 import { ViteMinifyPlugin } from "vite-plugin-minify";
-import { comment } from "postcss";
 const IN_PRODUCTION = process.env.NODE_ENV === "production";
 const IN_DEVELOPMENT = process.env.NODE_ENV === "development";
 
@@ -11,8 +10,8 @@ const hidePreloader = () => {
     name: "hide-preloader",
     transformIndexHtml(html) {
       return html.replace(
-        `<link rel="stylesheet" href="./src/css/preloader.min.css" type="text/css" media="screen">`,
-        `<!-- <link rel="stylesheet" href="./src/css/preloader.min.css" type="text/css" media="screen"> -->`
+        `<link rel="stylesheet" href="./src/css/preloader.min.css" type="text/css">`,
+        `<!-- <link rel="stylesheet" href="./src/css/preloader.min.css" type="text/css"> -->`
       );
     }
   }
@@ -46,5 +45,5 @@ export default defineConfig({
   build: {
     outDir: "./docs",
   },
-  
+
 });

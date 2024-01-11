@@ -82,7 +82,8 @@ const serviceSlidesData = [
   },
 ];
 const slideBoxesHtml = serviceSlidesData.map((sl) => {
-  return `<li class="glide__slide h-auto">
+  const output =
+    `<li class="glide__slide h-auto">
       <div class="card h-100">
         <div class="card-body">
           <div class="card-title text-primary fw-medium fs-5">${sl.icon} ${sl.title}</div>
@@ -90,6 +91,7 @@ const slideBoxesHtml = serviceSlidesData.map((sl) => {
         </div>
       </div>
     </li>`;
+  return output;
 });
 const slideBoxesElement = document.getElementById("service-slides");
 if (slideBoxesElement) slideBoxesElement.innerHTML = slideBoxesHtml.join("");

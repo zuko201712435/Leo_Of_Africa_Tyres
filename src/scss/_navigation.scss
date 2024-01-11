@@ -38,7 +38,6 @@
   text-indent: -9999px;
   margin-bottom: 0;
   z-index: -99;
-  transition: v.$transition;
   filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.3));
 }
 
@@ -71,7 +70,6 @@ ul.primary-menu {
 .primary-menu .menu-item  {
   color: v.$light;
   text-shadow: v.$text-shadow;
-  transition: v.$transition;
   font-size: .875rem;
   font-weight: 500;
   line-height: 76px;
@@ -128,7 +126,7 @@ ul.primary-menu {
   ul.primary-menu {
     margin-bottom: 20px;
   }
-  
+
   .site-header {
     background-color: rgba(55, 65, 98, 0.95);
     padding-top: 0;
@@ -139,7 +137,7 @@ ul.primary-menu {
   .dark .site-title > a {
     height: 66px;
   }
-  
+
   .menu-toggle {
     background: transparent;
     border-width: 0;
@@ -182,8 +180,8 @@ ul.primary-menu {
   }
 
   .menu-toggle.activated::before {
-    box-shadow: inset 1px -1px 4px rgba(0, 0, 0, 0.4);
     transform: rotateX(180deg);
+    color: var(--bs-secondary);
   }
 
   .menu-toggle::before,

@@ -11,9 +11,11 @@ const alertBoxesData = [
   },
 ];
 const alertBoxHtml = alertBoxesData.map((bx) => {
-  return `<div class="col-lg-4">
+  const output =
+    `<div class="col-lg-4">
       <div class="p-3 fw-medium rounded bg-secondary border border-primary h-100">${bx.body}</div>
     </div>`;
+  return output;
 });
 const alertBoxesElement = document.getElementById("alert-boxes");
 if (alertBoxesElement) alertBoxesElement.innerHTML = alertBoxHtml.join("");

@@ -7,30 +7,14 @@ import "./scss/style.scss"
 import "boxicons/css/boxicons.css"
 
 
-
-
-
-
-// INTERACTIVITY
-import "./js/interact.js"
-
-// Navigation
-import "./js/nav_bar.js"
-
 // Sections
+import "./js/header.js"
 import "./js/deals.js"
 import "./js/whyus.js"
 import "./js/aboutus.js"
 import "./js/testimonials.js"
-
-// store status
-import "./js/store_status.js"
-
-// scroll spy
-import "./js/scrollspy.js"
-
-// contact form
-import "./js/contact_form.js"
+import "./js/contact.js"
+import "./js/footer.js"
 
 // GlideJs
 import "./js/glide.js"
