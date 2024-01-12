@@ -7,15 +7,15 @@
   position: relative;
   min-height: 100svh;
 
-  & a.home-phone > i.bx:hover {
+  a.home-phone > i.bx:hover {
     transform: rotate(30deg);
   }
 
-  & .container * {
+  .container * {
     z-index: 2;
   }
-  
-  & .background-overlay {
+
+  .background-overlay {
     height: 100%;
     width: 100%;
     min-height: 100svh;

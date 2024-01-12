@@ -1,5 +1,5 @@
 // BOOTSTRAP
-// import "./scss/main.scss"
+// import "./scss/bs-dynamic.scss"
 import "./css/bs-compiled.css"
 // STYLES
 import "./scss/style.scss"
