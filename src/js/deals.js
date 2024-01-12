@@ -11,13 +11,12 @@ const alertBoxesData = [
   },
 ];
 const alertBoxHtml = alertBoxesData.map((bx) => {
+  const body = bx.body ? bx.body : ``;
   const output =
-    `<div class="col-lg-4">
-      <div class="p-3 fw-medium rounded bg-secondary border border-primary h-100">${bx.body}</div>
-    </div>`;
+    `<li>${body}</li>`;
   return output;
 });
-const alertBoxesElement = document.getElementById("alert-boxes");
+const alertBoxesElement = document.querySelector("#alert-boxes .card-body");
 if (alertBoxesElement) alertBoxesElement.innerHTML = alertBoxHtml.join("");
 
 

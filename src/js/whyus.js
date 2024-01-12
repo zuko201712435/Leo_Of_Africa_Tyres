@@ -7,12 +7,12 @@ const counterBoxesData = [
   },
   {
     id: "tires-counter",
-    number: 640,
+    number: 650,
     text: "Tires Changed",
   },
   {
     id: "wheels-counter",
-    number: 2200,
+    number: 2250,
     text: "Wheels Aligned",
   },
   {
@@ -22,21 +22,56 @@ const counterBoxesData = [
   },
 ];
 const counterBoxesHtml = counterBoxesData.map((cb) => {
+  const id = cb.id ? cb.id : ``;
+  const number = cb.number ? cb.number : ``;
+  const text = cb.text ? cb.text : ``;
   const output =
-    `<div id="${cb.id}" class="counter-widget ${cb.id} col-6 col-lg-3">
-      <div class="counter-inner shadow-sm rounded-4 p-4 bg-secondary h-100">
+    `<div id="${id}" class="counter-widget col-6 col-lg-3">
+      <div class="shadow-sm rounded p-4 bg-secondary text-bg-secondary h-100 d-flex flex-column justify-content-center">
         <div class="counter-container">
           <div class="counter-head fs-3">
-            <span class="counter-number">${cb.number}</span>+
+            <span class="counter-number">${number}</span>+
           </div>
         </div>
-        <div>${cb.text}</div>
+        <div>${text}</div>
       </div>
     </div>`;
   return output;
 });
 const counterBoxesElement = document.getElementById("counter-boxes");
 if (counterBoxesElement) counterBoxesElement.innerHTML = counterBoxesHtml.join("");
+
+// animate counters
+const reasonCounter = document.querySelectorAll(`.counter-number`);
+reasonCounter.forEach(reason => {
+  if (reason) countWhenVisible(reason, reason.innerHTML, 1000);
+})
+function countWhenVisible(element, targetCount, speed) {
+  let hasCounted = false;
+  let startTime = null;
+  let observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && !hasCounted) {
+      hasCounted = true;
+      startTime = performance.now();
+      let count = 0;
+      let duration = speed;
+      let interval = setInterval(() => {
+        let elapsedTime = performance.now() - startTime;
+        let progress = elapsedTime / duration;
+        if (progress >= 1) {
+          clearInterval(interval);
+          element.innerHTML = targetCount;
+        } else {
+          count = Math.floor(progress * targetCount);
+          element.innerHTML = count;
+        }
+      }, 20);
+    }
+  });
+  if (element) observer.observe(element);
+}
+
+
 
 
 // Setup WhyUs Counter Boxes
@@ -67,12 +102,14 @@ const reasonBoxesData = [
   },
 ];
 const reasonBoxesHtml = reasonBoxesData.map((rs) => {
+  const title = rs.title ? rs.title : ``;
+  const body = rs.body ? rs.body : ``;
   const output =
     `<div class="col-lg-4 col-6 col-12">
       <div class="card shadow-sm h-100">
         <div class="card-body">
-          <div class="fs-5 text-primary fw-medium card-title">${rs.title}</div>
-          ${rs.body}
+          <div class="fs-5 text-primary fw-medium card-title">${title}</div>
+          ${body}
         </div>
       </div>
     </div>`;
@@ -80,51 +117,3 @@ const reasonBoxesHtml = reasonBoxesData.map((rs) => {
 });
 const reasaonBoxesElement = document.getElementById("reason-boxes");
 if (reasaonBoxesElement) reasaonBoxesElement.innerHTML = reasonBoxesHtml.join("");
-
-
-// animate counters
-function countWhenVisible(element, targetCount, speed) {
-  let hasCounted = false;
-  let startTime = null;
-  let observer = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting && !hasCounted) {
-      hasCounted = true;
-      startTime = performance.now();
-      let count = 0;
-      let duration = speed;
-      let interval = setInterval(() => {
-        let elapsedTime = performance.now() - startTime;
-        let progress = elapsedTime / duration;
-        if (progress >= 1) {
-          clearInterval(interval);
-          element.innerHTML = targetCount;
-        } else {
-          count = Math.floor(progress * targetCount);
-          element.innerHTML = count;
-        }
-      }, 20);
-    }
-  });
-
-  if (element) observer.observe(element);
-}
-countWhenVisible(
-  document.querySelector(".business-counter .counter-number"),
-  5,
-  1000
-);
-countWhenVisible(
-  document.querySelector(".tires-counter .counter-number"),
-  640,
-  1000
-);
-countWhenVisible(
-  document.querySelector(".wheels-counter .counter-number"),
-  2200,
-  2000
-);
-countWhenVisible(
-  document.querySelector(".oil-counter .counter-number"),
-  5000,
-  3000
-);

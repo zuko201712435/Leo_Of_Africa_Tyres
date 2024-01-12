@@ -82,12 +82,15 @@ const serviceSlidesData = [
   },
 ];
 const slideBoxesHtml = serviceSlidesData.map((sl) => {
+  const body = sl.body ? sl.body : ``;
+  const icon = sl.icon ? sl.icon : ``;
+  const title = sl.title ? sl.title : ``;
   const output =
     `<li class="glide__slide h-auto">
       <div class="card h-100">
         <div class="card-body">
-          <div class="card-title text-primary fw-medium fs-5">${sl.icon} ${sl.title}</div>
-          ${sl.body}
+          <div class="card-title text-primary fw-medium fs-5">${icon} ${title}</div>
+          ${body}
         </div>
       </div>
     </li>`;
