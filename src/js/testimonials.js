@@ -1,6 +1,12 @@
 // Setup Alert Boxes
 const alertBoxesData = [
   {
+    url: `https://goo.gl/maps/P5FHwGYWsxGWWU3R7`,
+    img: `./media/reviewers/Eddrina-Delmont.webp`,
+    name: `Eddrina Delmont`,
+    body: `Amazing amazing ! Fixed my breaks in no time. Customer service was excellent. Definitely recommend for anyone who doesn’t want to get ripped off or overpriced by other dealers. Come in and they will take care of you. Thank you so much Farhan for helping me out today and in a timely manner!`,
+  },
+  {
     url: `https://maps.app.goo.gl/6gwbvcAP8LdTyMnb6`,
     img: `./media/reviewers/Danielle_Marie.webp`,
     name: `Danielle Marie`,
