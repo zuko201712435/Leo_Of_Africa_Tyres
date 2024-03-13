@@ -1,6 +1,30 @@
 // Setup Alert Boxes
 const alertBoxesData = [
   {
+    url: `https://maps.app.goo.gl/yaGPXqhh7JXkPeQK8`,
+    img: false,
+    name: `Alejandro Nuve`,
+    body: `I had a great experience ay car club tire i went in for brakes ando rotor. The staff was very friendly ando welcoming from the momoent i walked in and they explained me very well which i apperciated as Someone doesnt know much about cars. I drove all the way from Orlando and it's worth it. The service was quick ando efficent and i was back on Road in no time.,My car feels mucho smoother to drive now. Overall, i highly recomend car club tire . They are very honest and prices was very good. Thanks and i Will be back`,
+  },
+  {
+    url: `https://maps.app.goo.gl/Kh5UKYhqnJr9vhy59`,
+    img: `./media/reviewers/Virag_Anna_Szolgyemy.webp`,
+    name: `Virag Anna Szolgyemy`,
+    body: `We were able to do a walk-in and get our alignment done right away. It took 45 mins from start to finish and it was only $60. All the staff was very friendly and helpful. It’s too bad I don’t live around here or else I would be a regular for sure :)`,
+  },
+  {
+    url: `https://maps.app.goo.gl/TT472PqByJGpnUhh7`,
+    img: false,
+    name: `Francisco Alfredo`,
+    body: `BEST SERVICE I’ve EVER GOT. I highly recommend this place for all your service needs. The staff are very knowledgeable and know what they are doing. They patiently listened and understood my concerns, and they explained all the process before proceeding.and the price was very good. I was very satisfied with their service and will definitely come again.thanks Shan for all the help.`,
+  },
+  {
+    url: `https://goo.gl/maps/yAAVWdtiPJ9v8y5U7`,
+    img: `./media/reviewers/Africans_In_Orlando.webp`,
+    name: `Africans In Orlando`,
+    body: `When you're looking for honest price, honest diagnostic, weekend service and great customer service, these guys are the best in the area. Shawn and Forhan are amazing professionals who will take good care of you and your car. I'll be coming here on a regular now 🙂 Happy Customer!`,
+  },
+  {
     url: `https://goo.gl/maps/P5FHwGYWsxGWWU3R7`,
     img: `./media/reviewers/Eddrina-Delmont.webp`,
     name: `Eddrina Delmont`,

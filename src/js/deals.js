@@ -44,8 +44,8 @@ const dealsSlidesData = [
   },
   {
     icon: `<i class="icon bx bxs-wrench display-6"></i>`,
-    title: `Tune Up for $299.99 & Up`,
-    body: `Tune up for $299.99 & up! Limited time offer. Optimize performance and reliability. Visit us today!`,
+    title: `Tune Up for $249.99 & Up`,
+    body: `Tune up for $249.99 & up! Limited time offer. Optimize performance and reliability. Visit us today!`,
   },
   {
     icon: `<i class="icon bx bxs-color display-6"></i>`,
