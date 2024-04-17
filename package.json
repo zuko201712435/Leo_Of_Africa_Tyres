@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --index",
+    "build": "vite build --dist",
     "test": "vite preview",
     "push": "git add . && git commit -m \"patch fixes\" && npm version patch && git push",
     "push-minor": "git add . && git commit -m \"minor updates\" npm version minor && git push",
